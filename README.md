@@ -18,4 +18,5 @@ In this app we have home page or deals. That is page where all action items are 
 To order something you dont have to be registered. Only admin have to be registered to be able to modify, add or remove items. 
 
 Link of youtube presentation:
+https://youtu.be/aB1_PH1PRq0
 
