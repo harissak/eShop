@@ -2,26 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
-## Development server
+Run backend: npm run start:server
+Run frontend: ng serve --open
+Login : no login informations needed, just click login
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+EShop is web application that I created as my own project to improve my angular programing skills. It is simple web shop application that could be used in any
+web shop business. I developed most important functionalities. To develope this app I used angular, typescript, javascript, services, routing.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+As backend I used NODE.js and Express.js. I wanted to learn node.js and that is why I choose it for backend and I used express.js to make it easier.
+As database I used MongoDB. I already have some experiance with Sql databases and this was my first time to work with mongodb. 
 
-## Build
+In this app we have home page or deals. That is page where all action items are shown. We can also chose man, women or kids page where we can see all items that are not on sale. It is possible to add to shopping cart items where total price par item and also total price of shopping cart will be automaticly calculated. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To order something you dont have to be registered. Only admin have to be registered to be able to modify, add or remove items. 
 
-## Running unit tests
+Link of youtube presentation:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
