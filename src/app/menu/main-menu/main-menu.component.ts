@@ -21,7 +21,7 @@ export class MainMenuComponent implements OnInit {
   faBars = faBars;
   categories=['Deals','Women', 'Man', 'Kids'];
   selected:string ='Deals';
-  isLogedIn= true;
+  isLogedIn= false;
   totalNumberOfItems = 0;
   @ViewChild('f') searchForm! : NgForm;
 
