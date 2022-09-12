@@ -1,0 +1,26 @@
+
+
+  <nav class="mainMenu navbar navbar-light justify-content-between  " style="background-color: transparent">
+     <select class="custom-select" id="inputGroupSelect04" [(ngModel)]="selected" (change)="changeCategory()">
+        <option  *ngFor="let cat of categories">{{cat}}</option>
+      </select>
+
+    <form class="form-inline"(ngSubmit)="onSubmit(f)" #f="ngForm">
+      <input class="form-control mr-sm-2" type="search" ngModel name="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <a  class="cart position-relative d-inline-flex" aria-label="View your shopping cart">
+      <i class="fas fa fa-shopping-cart fa-lg" (click)="shoppingList()"></i>
+      <span *ngIf="totalNumberOfItems !== 0" class="cart-basket d-flex align-items-center justify-content-center">
+        {{totalNumberOfItems}}
+      </span>
+    </a>
+    <fa-icon [icon]="faUser" (click)="login()" *ngIf="!isLogedIn"></fa-icon>
+    <a href="" *ngIf="isLogedIn">My profile</a>
+    <a (click)="logOut()" *ngIf="isLogedIn">Log out</a>
+
+    <button class="btn btn-outline-success my-2 my-sm-0 add-new-item" type="button" *ngIf="isLogedIn" (click)="addNewItem()">ADD NEW ITEM</button>
+
+
+  </nav>
+

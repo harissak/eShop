@@ -1,0 +1,15 @@
+.navbar {
+  width: 90%;
+  margin: auto;
+  background-color: black;
+  justify-content: center;
+  margin-bottom: 11rem;
+
+}
+
+.navbar ul li {
+  padding-right: 2rem;
+}
+.navbar ul li a{
+  color: aliceblue;
+}

@@ -1,0 +1,25 @@
+.row {
+  justify-content: center;
+  padding-bottom:0 ;
+  margin-bottom: 0;
+}
+
+.row h3 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom:0 ;
+  margin-bottom: 0;
+}
+
+.women{
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+
+.man {
+  margin-bottom: 1%;
+}
+
+.kids {
+  margin-bottom: 1%;
+}

@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="card" style="width: 16rem;" *ngFor="let item of itemsArray; let i =index">
+    <p  class="card-text card-title">{{item.title}}</p>
+    <div class="row icons">
+      <fa-icon id="editItem" (click)="editItem(item.id, item.sale)" [icon]="faPenToSquare" *ngIf="isLogedIn"></fa-icon>
+        <p class="card-text card-price"  [ngStyle]="{'color': item.sale? 'red' : 'black'}" >${{item.price}}</p>
+        <fa-icon id="trashCan" (click)="deleteItem(item.id)" [icon]="faTrashCan" *ngIf="isLogedIn"></fa-icon>
+      </div>
+        <img class="card-img-top"  [src]="item.imageUrl">
+        <div class="row-menu">
+          <button (click)="onBuyItem(item)" class="btn btn-primary">BUY</button>
+          <select  class="custom-select" (change)="selectChangeHandler($event)" id="inputGroupSelect04">
+            <option *ngFor="let sizeItem of item.sizeAvailable" [value]='sizeItem'>{{sizeItem}}</option>
+          </select>
+        </div>
+  </div>
+</div>

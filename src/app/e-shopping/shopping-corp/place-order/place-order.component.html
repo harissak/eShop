@@ -1,0 +1,72 @@
+
+<div class="row">
+<div class="column">
+  <div class="column">
+    <h3>Delivery informations</h3>
+  </div>
+  <div class="row">
+    <form (ngSubmit)="sendMyOrder()" [formGroup]="deliveryInformationsForm">
+      <div class="row">
+        <div class="col">
+          <input type="text" formControlName="fName" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+          <input type="text" formControlName="lName" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="email" formControlName="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="email" formControlName="rEmail" class="form-control" id="inputEmail4" placeholder="Repeat your email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" formControlName="address" class="form-control" id="address1" placeholder="Address">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" formControlName="address2" id="address2" placeholder="Address 2">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" formControlName="country" placeholder="Country" class="form-control" id="inputCountry">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" formControlName="city" placeholder="City" id="inputCity">
+        </div>
+        <div class="form-group col-md-2">
+          <input type="text" class="form-control" placeholder="ZIP" formControlName="zip" id="inputZip">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send my order</button>
+    </form>
+  </div>
+</div>
+
+  <div class="column">
+    <div class="row">
+      <h3>Ordered items</h3>
+    </div>
+    <div class="column">
+      <div class="row singleItem" *ngFor="let item of shoppingCartList">
+        <div class="column column-text">
+          <h2><span>Title: </span> {{item.title}}</h2>
+          <p><span>Size chosen: </span>{{item.sizeChoosen}}</p>
+          <p><span>Ordered items: </span>{{item.numberOfItems}}</p>
+          <p><span>Price of ordered items:</span> {{'$'+item.totalPrice}}</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row totalPrice">
+        <h2>Total price: </h2>
+        <h1> {{ " $" + totalPrice}}</h1>
+      </div>
+    </div>
+
+  </div>
+
+</div>

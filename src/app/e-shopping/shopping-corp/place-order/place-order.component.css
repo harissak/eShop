@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+form {
+  margin: 20px;
+}
+
+form div {
+  padding: 5px 20px;
+}
+
+.form-control{
+  padding-left: 5px;
+}
+
+.form-group{
+  width: 95%;
+
+}
+
+.place-order {
+  display: flex;
+}
+
+button {
+  margin-top: 1rem;
+  padding: .3rem 1rem;
+}
+
+.singleItem {
+  outline: 1px solid brown;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 25rem;
+}
+
+span {
+  font-weight: bold;
+  color: brown;
+}
+
+.totalPrice h2 {
+  font-weight:bold;
+}
+
+.totalPrice h1{
+  color: brown;
+}
+
+.column-text h2{
+  margin: 0;
+  padding: 0;
+}
+.column-text p{
+  margin: 0;
+  padding: 0;
+}
+

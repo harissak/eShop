@@ -1,0 +1,46 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.row {
+  min-width: 18rem;
+  width: auto;
+  display: flex;
+
+}
+
+.singleItem {
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 0 20px 5px rgba(0,0,0,.3);
+  margin-bottom: 1rem;
+
+}
+
+.row img{
+  width: 5rem;
+  height: 6rem;
+}
+
+.column-text {
+  margin-left: 2rem;
+  padding-right: 2rem;
+}
+
+.column-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.column-text h2 {
+  margin: 0;
+  padding: 0;
+}
+button{
+  margin-top: 2rem;
+}
+
+.row-piece {
+  display: flex;
+}
+
+.row h1 {
+  color: red;
+  padding-left: 1rem;
+}

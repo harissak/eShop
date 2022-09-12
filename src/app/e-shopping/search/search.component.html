@@ -1,0 +1,12 @@
+<div class="row" *ngIf="searchItems.length >0" >
+  <h3>Result of your search:</h3>
+
+</div>
+<div class="row">
+  <h1 *ngIf="searchItems.length <=0">Unfortunatly there is no items with name: <b>{{searchedTerm}}</b> </h1>
+</div>
+<app-template [itemsArray]="searchItems"></app-template>
+<div class="row">
+  <h3>Maybe you would be interested:</h3>
+</div>
+<app-template [itemsArray]="searchItems2"></app-template>

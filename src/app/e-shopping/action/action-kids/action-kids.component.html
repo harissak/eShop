@@ -1,0 +1,6 @@
+<div  class="items">
+  <fa-icon [icon]="faBackward" (click)="setPrevious()" *ngIf="itemsKids.length >4" class="previous"></fa-icon>
+  <app-template [itemsArray]="itemsKids2"></app-template>
+  <fa-icon [icon]="faForward" (click)="setNext()" *ngIf="itemsKids.length >4" class="next"></fa-icon>
+</div>
+

@@ -1,0 +1,23 @@
+<h3>Shopping List</h3>
+<div class="row singleItem" *ngFor="let item of shoppinCorpList">
+  <div class="column">
+    <img [src]=item.imageUrl>
+  </div>
+  <div class="column column-text">
+    <h2>{{item.title}}</h2>
+    <p>{{item.sizeChoosen}}</p>
+    <div class="row-piece">
+        <i class="bi bi-caret-left-fill" (click)="deleteOneItem(item)"></i>
+        <p>{{item.numberOfItems}}</p>
+        <i class="bi bi-caret-right-fill" (click)="addOneItem(item)"></i>
+    </div>
+    <p>{{'$'+item.totalPrice}}</p>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <h2>Total price:</h2>
+  <h1> {{' $' + totalPrice}}</h1>
+</div>
+
+

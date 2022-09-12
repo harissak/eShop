@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.row {
+  width: 100%;
+  background-color: black;
+  padding: 1rem 3rem;
+  justify-content: center;
+}
+
+.row h5 {
+  color: white;
+  margin: 0;
+}
+
+.row h6 {
+  margin: 0;
+  color: white;
+}

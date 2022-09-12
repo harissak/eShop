@@ -1,0 +1,3 @@
+use('eShop')
+
+db.items.find()

@@ -1,0 +1,63 @@
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  width: 60%;
+  margin: auto;
+}
+
+#inputGroupSelect04 {
+  width: 7rem;
+}
+.btn {
+  background-color: rgb(47, 185, 47);
+  color: white;
+  outline:1px solid white;
+}
+
+.btn:hover {
+  background-color: rebeccapurple;
+  outline:1px solid white;
+
+}
+
+fa-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.custom-select {
+  cursor: pointer;
+}
+
+.add-new-item {
+  background-color: brown;
+}
+
+a.cart .cart-basket {
+  font-size: .6rem;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  background-color: brown;
+  border-radius: 50%;
+}
+
+a i{
+  color: white;
+  font-size: 2rem;
+}
+
+nav {
+  position: relative;
+  top: -71px;
+}
+
+a {
+  cursor: pointer;
+}

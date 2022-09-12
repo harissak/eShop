@@ -1,0 +1,68 @@
+<h3>Add - Edit New Item</h3>
+<hr>
+<form [formGroup]="addNewItemForm" (ngSubmit)="addNewItem()" class="example-form">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="">Article title</span>
+    </div>
+    <input formControlName="title" type="text" class="form-control">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Price</span>
+      <span class="input-group-text">$</span>
+    </div>
+    <input type="number" formControlName="price" class="form-control" aria-label="Amount (to the nearest dollar)">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Image URL</span>
+    </div>
+    <input type="text" formControlName="imageUrl" class="form-control" aria-label="Amount (to the nearest dollar)">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text sale">SALE</span>
+      <div class="input-group-text">
+        <input type="checkbox" formControlName="sale" aria-label="Checkbox for following text input">
+      </div>
+    </div>
+  </div>
+
+  <span class="input-group-text">Category</span>
+  <div class="radio" *ngFor="let cat of categories">
+    <label for="">
+      <input type="radio" formControlName="category" [value]="cat"> {{cat}}
+    </label>
+  </div>
+  <div formGroupName="size">
+    <div class="form-check form-check-inline">
+      <span class="input-group-text">Size available</span>
+    </div>
+    <div class="form-check form-check-inline">
+      <input formControlName="s" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+      <label class="form-check-label" for="inlineCheckbox1">s</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input formControlName="sm" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+      <label class="form-check-label" for="inlineCheckbox2">sm</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input formControlName="m" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+      <label class="form-check-label" for="inlineCheckbox1">m</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input formControlName="l" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+      <label class="form-check-label" for="inlineCheckbox2">l</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input formControlName="xl" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+      <label class="form-check-label" for="inlineCheckbox1">xl</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input formControlName="xxl" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+      <label class="form-check-label" for="inlineCheckbox2">xxl</label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-success">{{buttonTitle}}</button>
+</form>
