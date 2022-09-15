@@ -8,7 +8,7 @@ const generalRoutes = require ('./routes/general-routes/general');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://harissak:123ManogDb@cluster0.k6rvyjm.mongodb.net/eShop?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://harissak:123MangoDb@cluster0.k6rvyjm.mongodb.net/eShop?retryWrites=true&w=majority')
 .then (() => {
   console.log('Connected to database');
 })
